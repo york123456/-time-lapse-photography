@@ -62,8 +62,8 @@ while True:
     
     
     deviation=0
-    for i in range(0,480,5):
-        for j in range(0,640,5):
+    for i in range(0,t0.shape[0],5):
+        for j in range(0,t0.shape[1],5):
             deviation=deviation+dilated[i,j]
     
     D=deviation/10000
