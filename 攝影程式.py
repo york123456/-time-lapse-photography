@@ -31,6 +31,9 @@ def save(T,no):
 設定攝影機編號
 '''
 cap = cv.VideoCapture(0)
+cap.set(cv.CAP_PROP_FRAME_WIDTH, 1920)
+cap.set(cv.CAP_PROP_FRAME_HEIGHT, 1080)
+
 if not cap.isOpened():
     print("Cannot open camera")
     sys.exit()
